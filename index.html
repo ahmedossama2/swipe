@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Slider main container (wrap all slide cards in swiper main container)-->
+    <div class="swiper">
+        <!-- Additional required wrapper (wrap all slide cards in wrapper container) -->
+        <div class="swiper-wrapper">
+            <!-- Slides (wrap each slide-card in swiper-slide )-->
+            <div class="swiper-slide">
+                <div class="slide-card ">
+                    <img class="slide-card-img-top" src="1.jpg" alt="" />
+                    <div class="slide-card-body">
+                        <h5>
+                             Classic-6 Months <br />
+                            <span> 1 PERSON 17 sqm </span>
+                        </h5>
+                        <p class="slide-card-text">
+                            “ 775 - 825 € p. Month Deposit 1.162,5 - 1.237,5 € / Handlingfee: 200 € Prices vary depending on floor or start date ”
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slides (wrap each slide-card in swiper-slide )-->
+            <div class="swiper-slide">
+                <div class="slide-card ">
+                    <img class="slide-card-img-top" src="2.jpg" alt="" />
+                    <div class="slide-card-body">
+                        <h5>
+                            Penthouse Balcony-6 Months <br />
+                            <span> 1 PERSON 23 sqm </span>
+                        </h5>
+                        <p class="slide-card-text">
+                            “ 990 € p. Month Deposit 1.485 € / Handlingfee: 200 € ”
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slides (wrap each slide-card in swiper-slide )-->
+            <div class="swiper-slide">
+                <div class="slide-card ">
+                    <img class="slide-card-img-top" src="3.jpg" alt="" />
+                    <div class="slide-card-body">
+                        <h5>
+                            Deluxe-6 Months <br />
+                            <span> 1 PERSON 19 sqm </span>
+                        </h5>
+                        <p class="slide-card-text">
+                            “ 803 - 833 € p. Month Deposit 1.204,5 - 1.249,5 € / ”
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slides (wrap each slide-card in swiper-slide )-->
+            <div class="swiper-slide">
+                <div class="slide-card ">
+                    <img class="slide-card-img-top" src="4.jpg" alt="" />
+                    <div class="slide-card-body">
+                        <h5>
+                            Penthouse Loft Balcony-6 Months <br />
+                            <span> 1 PERSON 35 sqm </span>
+                        </h5>
+                        <p class="slide-card-text">
+                            “ 1.229 € p. Month Deposit 1.843,5 € / Handlingfee: 200 € ”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // Default parameters
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            //parameter for center active slide 
+            centeredSlides: true,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
